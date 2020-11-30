@@ -8,7 +8,7 @@ public class TankData : MonoBehaviour
     public TankMover mover;
     public TankShooter shooter;
     public TankHealth health;
-    public BulletDestroyer Bullet;
+    public Bullet Bullet;
 
     //Data
     public float moveSpeed;
@@ -22,7 +22,7 @@ public class TankData : MonoBehaviour
         mover = GetComponent<TankMover>();
         shooter = GetComponent<TankShooter>();
         health = GetComponent<TankHealth>();
-        Bullet = GetComponent<BulletDestroyer>();
+        Bullet = GetComponent<Bullet>();
 
     }
 

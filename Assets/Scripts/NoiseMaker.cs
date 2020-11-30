@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIController : MonoBehaviour {
+public class NoiseMaker : MonoBehaviour {
+
+    public float soundVolume;
 
 	// Use this for initialization
 	void Start () {

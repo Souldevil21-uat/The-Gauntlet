@@ -9,11 +9,18 @@ public class PlayerController : Controller {
 	// Use this for initialization
 	public override void Start () {
 
+        GameManager.instance.players.Add(this);
+
 		
 	}
-	
-	// Update is called once per frame
-	public override void Update () {
+
+    public void OnDestroy()
+    {
+        GameManager.instance.players.Remove(this);
+    }
+
+    // Update is called once per frame
+    public override void Update () {
 
         // Handle Moving
 

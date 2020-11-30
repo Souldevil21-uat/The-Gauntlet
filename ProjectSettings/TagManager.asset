@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - PlayerBullet
   - Enemy
+  - Waypoint
+  - EBullet
   layers:
   - Default
   - TransparentFX
