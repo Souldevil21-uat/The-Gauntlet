@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HealthPickUp : PowerUp
 {
+    public HealthPickUp Powerup;
+
     public float healthToAdd;
     public override void Apply(PowerUpManager target)
 {
