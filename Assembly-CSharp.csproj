@@ -60,16 +60,26 @@
      <Compile Include="Assets\Scripts\FSM.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\HealthPickUp.cs" />
+     <Compile Include="Assets\Scripts\HealthPowerUp.cs" />
+     <Compile Include="Assets\Scripts\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\NoiseMaker.cs" />
+     <Compile Include="Assets\Scripts\PawnSpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\PickUp.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PowerUp.cs" />
      <Compile Include="Assets\Scripts\PowerUpManager.cs" />
+     <Compile Include="Assets\Scripts\Room.cs" />
      <Compile Include="Assets\Scripts\SpawnPickup.cs" />
+     <Compile Include="Assets\Scripts\SpeedPickUp.cs" />
+     <Compile Include="Assets\Scripts\SpeedPowerUp.cs" />
+     <Compile Include="Assets\Scripts\TakeDamage.cs" />
+     <Compile Include="Assets\Scripts\TankArmor.cs" />
      <Compile Include="Assets\Scripts\TankData.cs" />
      <Compile Include="Assets\Scripts\TankHealth.cs" />
      <Compile Include="Assets\Scripts\TankMover.cs" />
      <Compile Include="Assets\Scripts\TankSenses.cs" />
      <Compile Include="Assets\Scripts\TankShooter.cs" />
+     <Compile Include="Assets\Scripts\TankSpeed.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/GitHib Repositories/The-Gauntlet/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

@@ -4,17 +4,49 @@ using UnityEngine;
 
 public class TankHealth : MonoBehaviour {
 
-    public int Health = 100;
-    public int curHealth = 100;
+    public float Health = 100;
+    public float curHealth = 100;
+   
 
 
     // Use this for initialization
-    void Start () {
+    void Start () 
+    {
+
+        curHealth = Health;
 		
 	}
 
-	// Update is called once per frame
-	void Update () {
+    public void Die(EnemyTankController source) 
+    {
+    
+        Destroy(gameObject);
+    
+    }
+
+    public void TakeDamage(float amount, EnemyTankController source)
+    {
+        curHealth = curHealth - amount;
+        Debug.Log(source.name + " did " + amount + " damage to " + gameObject.name);
+        curHealth = Mathf.Clamp(curHealth, 0, Health);
+
+        if (curHealth <= 0)
+        {
+            Die(source);
+        }
+    }
+
+    public void Heal(float amount, PlayerController source)
+    {
+
+        curHealth += amount;
+
+    }
+
+
+
+    // Update is called once per frame
+    void Update () {
 
         if (curHealth <1)
         {

@@ -1,25 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[System.Serializable]
 
-public class HealthPickUp : PowerUp
+public class HealthPickUp : PickUp 
 {
-    public HealthPickUp Powerup;
+    public HealthPowerUp powerUp;
 
-    public float healthToAdd;
-    public override void Apply(PowerUpManager target)
-{
 
-    // TODO: Apply Health
+    public void OnTriggerEnter(Collider other)
+    {
 
-}
+        PowerUpManager powerupManager = other.GetComponent<PowerUpManager>();
 
-    public override void Remove(PowerUpManager target)
-{
+        if (powerupManager != null)
+        {
+            powerupManager.Add(powerUp);
 
-    //TODO: Remove Health Upgrade
+            Debug.Log("Im Working!");
 
-}
+            Destroy(gameObject);
+
+        }
+    }
+
+
 
 }

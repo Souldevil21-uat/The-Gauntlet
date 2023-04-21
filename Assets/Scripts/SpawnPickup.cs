@@ -43,4 +43,9 @@ public class SpawnPickup : MonoBehaviour {
 
 		
 	}
+
+
+
+        //variable to store powerupcontroller
+
 }
